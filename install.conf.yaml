@@ -28,3 +28,5 @@
 
     # tools
     ~/.editorconfig: editorconfig
+    ~/.golangci.yml: golangci.yml
+    ~/.ripgreprc: ripgreprc
