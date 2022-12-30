@@ -5,6 +5,11 @@
 
 - clean: ["~"]
 
+- shell:
+    - command: ./macos/setup-homebrew.sh
+      description: Installing Homebrew and Essential Packages
+      stdout: true
+
 - link:
     # git
     ~/.gitconfig: gitconfig
