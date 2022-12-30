@@ -40,6 +40,7 @@ ms-toolsai.jupyter-keymap
 ms-toolsai.jupyter-renderers
 ms-toolsai.vscode-jupyter-cell-tags
 ms-toolsai.vscode-jupyter-slideshow
+ms-vscode.makefile-tools
 ms-vsliveshare.vsliveshare
 ms-vsliveshare.vsliveshare-audio
 naumovs.color-highlight
