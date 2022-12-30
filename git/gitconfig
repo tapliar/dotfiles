@@ -1,0 +1,41 @@
+[core]
+  # File that contains paths that are not meant to be tracked
+  excludesfile = ~/.gitignore_global
+  # Treat spaces before tabs and all trailing whitespace as an error
+  whitspace = spaces-before-tab,trailing-space
+  # Don't paginate output by default
+  pager = less -+FX
+[fetch]
+  # Prune braches no longer on remote
+  prune = true
+[pull]
+  # Local merge commits are included in the rebase
+  rebase = merges
+[merge]
+  # Set merge tool to vscode
+  tool = vscode
+[mergetool "vscode"]
+  cmd = code --wait $MERGED
+[diff]
+  # Highlight whitespace errors
+  wsErrorHighlight = all
+  # Show renames/moves as such
+  renames = true
+[rebase]
+  # Move commits that begin with squash!/fixup! under -i
+  autosquash = true
+  # Automatically stash/stash pop before and after
+  autostash = true
+[log]
+  # Show timestamps in a ISO 8601-like format
+  date = iso
+[color]
+  # colorize output
+  ui = true
+[rerere]
+  # Activate recording of resolved conflicts
+  enabled = true
+  # Update index with the resulting contents after it cleanly resolves conflicts using previously recorded resolution
+  autoupdate = true
+[include]
+  path = ~/.gitconfig_local
