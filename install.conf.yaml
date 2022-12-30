@@ -26,6 +26,11 @@
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
 
+    # vim
+    ~/.vim_runtime/my_configs.vim:
+      force: true
+      path: my_configs.vim
+
     # tools
     ~/.editorconfig: editorconfig
     ~/.golangci.yml: golangci.yml
