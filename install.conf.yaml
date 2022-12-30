@@ -23,8 +23,8 @@
       path: zsh/custom/*.zsh
 
     # git
-    ~/.gitconfig: gitconfig
-    ~/.gitignore_global: gitignore_global
+    ~/.gitconfig: git/gitconfig
+    ~/.gitignore_global: git/gitignore_global
 
     # vim
     ~/.vim_runtime/my_configs.vim:
