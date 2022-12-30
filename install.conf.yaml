@@ -25,3 +25,6 @@
     # git
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
+
+    # tools
+    ~/.editorconfig: editorconfig
