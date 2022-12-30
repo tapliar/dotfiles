@@ -1,0 +1,194 @@
+{
+  "[dockercompose]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "[python]": {
+    "gitlens.codeLens.symbolScopes": ["!Module"]
+  },
+  "[terraform]": {
+    "editor.formatOnSave": true
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "diffEditor.ignoreTrimWhitespace": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace, MesloLGS NF",
+  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.renderWhitespace": "all",
+  "editor.stickyScroll.enabled": true,
+  "editor.suggestSelection": "first",
+  "editor.wordWrap": "on",
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "cmd": "hclfmt -w **/*.hcl",
+        "match": "\\.hcl$"
+      },
+      {
+        "cmd": "packer fmt -recursive .",
+        "match": "\\.pkr.hcl"
+      }
+    ]
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.project": true,
+    "**/.settings": true
+  },
+  "git.autofetch": true,
+  "git.mergeEditor": false,
+  "gitlab.customQueries": [
+    {
+      "name": "Issues assigned to me",
+      "noItemText": "There is no issue assigned to you.",
+      "scope": "assigned_to_me",
+      "state": "opened",
+      "type": "issues"
+    },
+    {
+      "name": "Issues created by me",
+      "noItemText": "There is no issue created by you.",
+      "scope": "created_by_me",
+      "state": "opened",
+      "type": "issues"
+    },
+    {
+      "name": "Merge requests assigned to me",
+      "noItemText": "There is no MR assigned to you.",
+      "scope": "assigned_to_me",
+      "state": "opened",
+      "type": "merge_requests"
+    },
+    {
+      "name": "Merge requests I'm reviewing",
+      "noItemText": "There is no MR for you to review.",
+      "reviewer": "<current_user>",
+      "state": "opened",
+      "type": "merge_requests"
+    },
+    {
+      "name": "Merge requests created by me",
+      "noItemText": "There is no MR created by you.",
+      "scope": "created_by_me",
+      "state": "opened",
+      "type": "merge_requests"
+    },
+    {
+      "name": "All project merge requests",
+      "noItemText": "The project has no merge requests",
+      "scope": "all",
+      "state": "opened",
+      "type": "merge_requests"
+    }
+  ],
+  "go.formatTool": "goimports",
+  "go.lintFlags": [
+    "--fast",
+    "-E",
+    "goimports",
+    "-E",
+    "gocritic",
+    "-E",
+    "gocyclo",
+    "-E",
+    "gosec",
+    "-E",
+    "maligned",
+    "-E",
+    "scopelint",
+    "-E",
+    "interfacer",
+    "-E",
+    "goconst",
+    "-E",
+    "unconvert",
+    "-E",
+    "unparam",
+    "-E",
+    "prealloc",
+    "-E",
+    "varcheck"
+  ],
+  "go.lintTool": "golangci-lint",
+  "go.toolsManagement.autoUpdate": true,
+  "go.useLanguageServer": true,
+  "material-icon-theme.activeIconPack": "react",
+  "material-icon-theme.files.associations": {
+    "*.go": "Go_gopher"
+  },
+  "merge-conflict.autoNavigateNextConflict.enabled": true,
+  "python.defaultInterpreterPath": "$HOME/.pyenv/shims/python",
+  "python.languageServer": "Default",
+  "python.terminal.activateEnvironment": false,
+  "redhat.telemetry.enabled": true,
+  "settingsSync.ignoredSettings": ["-shellcheck.executablePath"],
+  "shellcheck.customArgs": [],
+  "shellcheck.enable": true,
+  "shellcheck.enableQuickFix": true,
+  "shellcheck.exclude": [],
+  "shellcheck.executablePath": "$HOMEBREW/bin/shellcheck",
+  "shellcheck.ignoreFileSchemes": ["git", "gitfs"],
+  "shellcheck.ignorePatterns": {},
+  "shellcheck.run": "onType",
+  "snyk.advanced.cliPath": "$HOME/Library/Application Support/snyk-ls/snyk-macos",
+  "snyk.trustedFolders": [],
+  "snyk.yesWelcomeNotification": false,
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.profiles.osx": {
+    "zsh": {
+      "path": "$HOMEBREW/bin/zsh"
+    }
+  },
+  // https://github.com/microsoft/vscode/issues/157128
+  "terminal.integrated.shellIntegration.enabled": false,
+  "terminal.integrated.tabs.enabled": true,
+  "terraform.languageServer.enable": true,
+  "terraform.languageServer.path": "",
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "vs-kubernetes": {
+    "vs-kubernetes.crd-code-completion": "enabled",
+    "vscode-kubernetes.draft-path.mac": "$HOME/.vs-kubernetes/tools/draft/darwin-amd64/draft",
+    "vscode-kubernetes.kubectl-path.mac": "$HOME/.vs-kubernetes/tools/kubectl/kubectl",
+    "vscode-kubernetes.minikube-path.mac": "$HOME/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.colorTheme": "Arc+",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.sideBar.location": "left",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.tree.indent": 15
+}

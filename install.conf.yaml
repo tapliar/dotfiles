@@ -30,3 +30,10 @@
     ~/.editorconfig: editorconfig
     ~/.golangci.yml: golangci.yml
     ~/.ripgreprc: ripgreprc
+
+    # VS Code MacOS
+    ~/Library/Application Support/Code/User:
+      if: "[ `uname` = Darwin ]"
+      glob: true
+      path: vscode/macos/*.json
+      force: true
