@@ -1,0 +1,2 @@
+# dotfiles
+sync dotfiles
