@@ -6,12 +6,14 @@
 - clean: ["~"]
 
 - shell:
-    - command: bash /macos/setup-homebrew.sh
+    - command: bash macos/setup-homebrew.sh
       description: Installing Homebrew and Essential Packages
       stdout: true
+      stderr: true
     - command: bash zsh/oh-my-zsh-setup.sh
       description: Installing oh-my-zsh, plugins and themes
       stdout: true
+      stderr: true
 
 - link:
     # zsh
