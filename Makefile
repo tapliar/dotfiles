@@ -14,7 +14,7 @@ vscode-save:
 
 # Save snapshot of all Homebrew packages to macos/Brewfile
 brew:
-	brew bundle dump -f --file=macos/Brewfile
+	brew bundle dump --force --file=macos/Brewfile
 	brew bundle --force cleanup --file=macos/Brewfile
 
 # Restore Homebrew packages
