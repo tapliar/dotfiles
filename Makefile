@@ -1,5 +1,5 @@
 # Save all
-save: vscode-save brew krew-save pip-save
+save: vscode-save brew krew-save pip-save iterm-config
 
 # Install all
 install: vscode-install brew-restore krew-install pip-install
@@ -41,3 +41,7 @@ pip-install:
 # Save all current plugins to plugins/pip
 pip-save:
 	pip freeze | cut -d "=" -f 1 > plugins/pip
+
+# Save iterm config
+iterm-config:
+	cp "${HOME}"/.config/iterm2/com.googlecode.iterm2.plist iterm2/com.googlecode.iterm2.plist
