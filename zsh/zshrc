@@ -10,7 +10,7 @@ fi
 export ZSH=$HOME/.oh-my-zsh
 
 # homebrew path (M1 vs Intel)
-# M1: $HOMEBREW/
+# M1: /opt/homebrew/
 # Intel: /usr/local/
 WHERE_BREW="$(where brew | grep 'bin/brew')"
 if [[ "$WHERE_BREW" == *"/opt/homebrew/"* ]]; then
