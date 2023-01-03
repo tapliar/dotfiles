@@ -39,14 +39,17 @@ fi
 if ! type brew > /dev/null 2>&1; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" > /dev/null 2>&1
     print_result $? 'Install Homebrew'
+
+    # Update Homebrew recipes
+    brew update
+
+    # Install all our dependencies with bundle (See Brewfile)
+    brew tap homebrew/bundle
+    brew bundle --file macos/Brewfile
+
+    print_result $? 'Install Homebrew dependencies'
+
+    # Remove outdated versions from the cellar
+    brew cleanup
+
 fi
-
-# Update Homebrew recipes
-brew update
-
-# Install all our dependencies with bundle (See Brewfile)
-brew tap homebrew/bundle
-brew bundle --file macos/Brewfile
-
-# Remove outdated versions from the cellar
-brew cleanup
