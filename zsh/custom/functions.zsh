@@ -3,11 +3,6 @@ my-ip() {
     curl ifconfig.co/
 }
 
-# kafka
-go-to-kafka() {
-    cd "$HOMEBREW"/opt/kafka/bin || exit
-}
-
 ###############################################################################
 #
 # AWS Related Functions
