@@ -57,7 +57,7 @@ update-everything() {
     update-github-repos ;\
     kubectl krew update ;\
     kubectl krew upgrade ;\
-    tldr --update 2>&1 ;\
+    tldr --update > /dev/null 2>&1 ;\
     echo "pip upgrade - $(pyenv version)"
     pip_upgrade_outdated -3 > /dev/null 2>&1 ;\
     (
