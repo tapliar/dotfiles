@@ -58,7 +58,7 @@ update-everything() {
     kubectl krew update ;\
     kubectl krew upgrade ;\
     tldr --update > /dev/null 2>&1 ;\
-    echo "pip upgrade - $(pyenv version)"
+    echo "pip upgrade - $(pyenv version)" ;\
     pip_upgrade_outdated -3 > /dev/null 2>&1 ;\
     (
         for version in $(pyenv versions | grep -Ev '(system|set)'); do
