@@ -27,9 +27,9 @@ export GOROOT=$HOMEBREW/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 
 # python pyenv
-export PYENV_ROOT=$HOME/.pyenv
-export PATH=$PYENV_ROOT/bin:$PATH
-eval "$(pyenv init --path)"
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 # java (openjdk)
 export PATH=$HOMEBREW/opt/openjdk/bin:$PATH
