@@ -112,6 +112,7 @@ fpath=($HOMEBREW/share/zsh/site-functions $fpath)
 fpath=($HOMEBREW/Cellar/zsh/5.9/share/zsh/functions $fpath)
 
 # History settings
+export HISTFILE=~/.zsh_history
 export HISTSIZE=1000000000
 export SAVEHIST=$HISTSIZE
 setopt HIST_EXPIRE_DUPS_FIRST
