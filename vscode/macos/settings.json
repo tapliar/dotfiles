@@ -12,6 +12,7 @@
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
   "[python]": {
+    "editor.formatOnType": true,
     "gitlens.codeLens.symbolScopes": ["!Module"]
   },
   "[terraform]": {
@@ -26,6 +27,7 @@
     "source.organizeImports": true
   },
   "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace, MesloLGS NF",
+  "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.guides.bracketPairs": "active",
   "editor.renderWhitespace": "all",
@@ -160,8 +162,6 @@
       "path": "$HOMEBREW/bin/zsh"
     }
   },
-  // https://github.com/microsoft/vscode/issues/157128
-  "terminal.integrated.shellIntegration.enabled": false,
   "terminal.integrated.tabs.enabled": true,
   "terraform.languageServer.enable": true,
   "terraform.languageServer.path": "",
